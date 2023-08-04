@@ -61,31 +61,56 @@ body{
 }
 img{
 	pointer-events: none;
-	user-drag: none;
-	-webkit-user-drag: none;
-	-moz-user-select: none;
+	// user-drag: none;
+	// -webkit-user-drag: none;
+	// -moz-user-select: none;
 	vertical-align: bottom;
 }
 
 
 
-
-.w1200{
+.w1800{
 	width: 95% !important;
+	max-width: 1800px;
+	margin: auto;
+}
+.w1200{
+	width: 75% !important;
 	max-width: 1200px;
 	margin: auto;
-	&.-s100{
-		width: 100% !important;
-	}
 }
 .w1050{
-	width: 95%;
+	width: 75%;
 	max-width: 1050px;
 	margin: auto;
 }
 .w850{
-	width: 95%;
+	width: 75%;
 	max-width: 850px;
+	margin: auto;
+}
+.w600{
+	max-width: 600px;
+	margin: auto;
+	@include mq(tb-pc1400){
+		width: 65%;
+	}
+	@include mq(tb){
+		width: 50%;
+		img{
+			width: 60%;
+		}
+	}
+	@include mq(sp){
+		width: 80%;
+		img{
+			width: 80%;
+		}
+	}
+}
+.w400{
+	width: 45%;
+	max-width: 400px;
 	margin: auto;
 }
 .w90-s{
@@ -161,6 +186,11 @@ img{
 		margin-bottom: 2vh !important;
 	}
 }
+.l-mgb_3_s{
+	@include mq(sp){
+		margin-bottom: 3vh !important;
+	}
+}
 .l-mgb_5_s{
 	@include mq(sp){
 		margin-bottom: 5vh !important;
@@ -210,6 +240,11 @@ img{
 	margin-bottom : 2.5vh !important;
 	@include mq(tb){
 		margin-bottom: 5vh !important;
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
 	}
 }
 .l-mgb_10{

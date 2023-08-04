@@ -16,15 +16,15 @@
 
 // どのサイトでも使えるようにした。
 #pc-right-contactArea{
-	background: $site-color01;
-	border: 1px solid $site-color01;
+	// background: $site-color01;
+	border: 1px solid $site-color_01;
     position: fixed;
     top: 33%;
-    right: 2%;
-    z-index: 9999;
+    right: 1.4%;
+    z-index: 9;
     .base-bg{
         height: auto;
-        max-width: 45px;
+        max-width: 50px;
     }
 }
 

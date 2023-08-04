@@ -19,39 +19,51 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/header_bg_s.jpg);
-					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
-					}
+					// background-image: url(../images/bg/bar_bg_s.jpg);
+					// @include mq(tb){
+						background-image: url(../images/bg/bar_bg.jpg);
+					// }
 				}
 			}
 		}
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
 			position: absolute;
-			
+
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
-				top: 2.5%;
+				top: 0%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 100%;
 				a{
 					display: block;
-					padding: 8% 23%;
+					padding: 44% 10%;
 				}
 			}
-			// サイト下部に表示（SPのみ）
+			// サイト下部に表示（PCのみ）
+			&.-right-middleBtn{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 36% 12%;
+				}
+			}
+			// サイト下部に表示（PCのみ）
 			&.-right-btmBtn{
-				top: 52.5%;
+				top: 67%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 100%;
 				a{
 					display: block;
-					padding: 8% 23%;
+					padding: 14% 14%;
 				}
 			}
+
 			//サイト下部に表示 （SPのみ）
 			&.-bottom-rightBtn{
 				top: 0%;
@@ -75,6 +87,16 @@
 				}
 			}
 
+			// M
+            &.-M-contents{
+				top: 50%;
+				left: 50%;
+				width: auto;
+				@include mq(tb){
+					top: 19%;
+    				left: 15.6%;
+				}
+			}
 
 			.l-contentsBox--wrapper{
 				width: 100%;
@@ -89,6 +111,11 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
+				&.-Ism-content{
+					@include mq(sp){
+						top: 29%;
+					}
+				}
 			}
 		}
 	}
@@ -116,6 +143,44 @@
 				@include mq(tb-pc1400){
 					width: 6%;
 				}
+			}
+		}
+	}
+
+	&.-revelArea{
+		.logoArea{
+			width: 24%;
+			margin: auto;
+			@include mq(tb){
+				width: 5%;
+			}
+		}
+	}
+	&.-ismArea{
+		.logoArea{
+			width: 15%;
+			margin: auto auto auto 0%;
+			@include mq(tb){
+				width: 6%;
+			}
+		}
+	}
+	&.-surroundArea{
+		.logoArea{
+			width: 24%;
+			margin: auto;
+			@include mq(tb){
+				width: 10%;
+			}
+		}
+	}
+	&.-modernArea{
+		.logoArea{
+			width: 24%;
+			margin: auto;
+			@include mq(tb){
+				width: 70%;
+				margin: auto auto auto 0;
 			}
 		}
 	}

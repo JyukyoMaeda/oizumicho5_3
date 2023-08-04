@@ -50,6 +50,21 @@
             @include mq(sp){
                 font-size: 10px;
             }
+            &.-s11{
+                @include mq(sp){
+                    font-size: 11px;
+                }
+            }
+            &.-s12{
+                @include mq(sp){
+                    font-size: 12px;
+                }
+            }
+            &.-s16{
+                @include mq(sp){
+                    font-size: 16px;
+                }
+            }
         }
         &.-sizeM{
             font-size: 12px;
@@ -499,6 +514,38 @@
             color: $site-color01;
         }
     }
+
+    &.-site-c01{
+        color: $site-color_01;
+        a{
+            color: $site-color_01;
+        }
+    }
+    &.-site-c02{
+        color: $site-color_02;
+        a{
+            color: $site-color_02;
+        }
+    }
+    &.-site-c03{
+        color: $site-color_03;
+        a{
+            color: $site-color_03;
+        }
+    }
+    &.-site-c04{
+        color: $site-color_04;
+        a{
+            color: $site-color_04;
+        }
+    }
+    &.-site-c05{
+        color: $site-color_05;
+        a{
+            color: $site-color_05;
+        }
+    }
+
     .w-auto{
         display: inline-block;
         width: auto;
