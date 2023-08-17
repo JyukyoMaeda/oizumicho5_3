@@ -358,7 +358,7 @@
 				justify-content: space-around;
 			}
 			.flexItem{
-				width: 100%;
+				width: 50%;
 				padding: 0 3%;
 				@include mq(tb){
 					width: 33.3333%;

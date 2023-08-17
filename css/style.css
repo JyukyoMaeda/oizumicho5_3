@@ -163,10 +163,16 @@ img {
 }
 @media screen and (max-width: 768px) {
   .w600 {
-    width: 80%;
+    width: 70%;
   }
   .w600 img {
-    width: 80%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .w600.-logo {
+    width: 50%;
+    margin-bottom: 9%;
   }
 }
 
@@ -347,6 +353,11 @@ img {
 @media screen and (max-width: 768px) {
   .l-mgb_10.-s_5 {
     margin-bottom: 5vh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-mgb_10.-s_10 {
+    margin-bottom: 10vh !important;
   }
 }
 @media screen and (min-width: 767px) {
@@ -593,8 +604,23 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-M-contents {
-    top: 19%;
+    top: 0%;
     left: 15.6%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .l-contents.-img-bg .l-contentsBox.-M-contents {
+    top: 7%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .l-contents.-img-bg .l-contentsBox.-M-contents {
+    top: 13%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-M-contents {
+    top: 19%;
   }
 }
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
@@ -1023,7 +1049,7 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
-  width: 100%;
+  width: 50%;
   padding: 0 3%;
 }
 @media screen and (min-width: 767px) {
@@ -2693,8 +2719,8 @@ img {
 #pc-right-contactArea {
   border: 1px solid #b2b2e8;
   position: fixed;
-  top: 33%;
-  right: 1.4%;
+  top: 13%;
+  right: 24px;
   z-index: 9;
 }
 #pc-right-contactArea .base-bg {
@@ -4644,7 +4670,7 @@ svg#bottomBtn_right .cls-2 {
 @media screen and (min-width: 767px) {
   .menu_box .el_humburger {
     display: block;
-    padding-top: 10px;
+    padding-top: 15%;
   }
 }
 .menu_box .el_humburger .el_humburger_wrapper {

@@ -102,9 +102,15 @@ img{
 		}
 	}
 	@include mq(sp){
-		width: 80%;
+		width: 70%;
 		img{
-			width: 80%;
+			width: auto;
+		}
+	}
+	&.-logo{
+		@include mq(sp){
+			width: 50%;
+			margin-bottom: 9%;
 		}
 	}
 }
@@ -257,6 +263,11 @@ img{
 	&.-s_5{
 		@include mq(sp){
 			margin-bottom: 5vh !important;
+		}
+	}
+	&.-s_10{
+		@include mq(sp){
+			margin-bottom: 10vh !important;
 		}
 	}
 	@include mq(tb){

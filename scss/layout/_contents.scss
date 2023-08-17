@@ -93,8 +93,17 @@
 				left: 50%;
 				width: auto;
 				@include mq(tb){
-					top: 19%;
+					top: 0%;
     				left: 15.6%;
+				}
+				@include mq(tb-pc1000){
+					top: 7%;
+				}
+				@include mq(tb-pc1400){
+					top: 13%;
+				}
+				@include mq(tb-pc1600){
+					top: 19%;
 				}
 			}
 
