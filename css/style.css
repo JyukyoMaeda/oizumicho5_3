@@ -144,6 +144,17 @@ img {
   margin: auto;
 }
 
+.w650 {
+  width: 78%;
+  margin: auto;
+}
+@media screen and (min-width: 767px) {
+  .w650 {
+    width: 50%;
+    max-width: 650px;
+  }
+}
+
 .w600 {
   max-width: 600px;
   margin: auto;
